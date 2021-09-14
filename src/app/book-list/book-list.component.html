@@ -3,8 +3,10 @@
   <bm-book-list-item class="item"
     *ngFor="let b of books"
     [book]="b" 
-    (click)="showDetails(b)"></bm-book-list-item>  
+    [routerLink]="b.isbn"></bm-book-list-item>  
 </div>
 
 <!-- Reicht ueber ein Property Binding -> [book] = "b" <- den Inhalt an die Child Component "book-list-item" weiter-->
 <!-- Reicht ueber ein Event Binding (click) ..... -->
+
+          
